@@ -685,7 +685,7 @@ export default function ProfilePage() {
                     {exp.title}
                   </h3>
                   <Link
-                    href={exp.url}
+                    href={exp.url as any}
                     className="inline-block rounded-lg bg-upepo-500 px-6 py-2 font-semibold text-white transition-all hover:bg-upepo-600"
                   >
                     View Experiment
@@ -716,7 +716,7 @@ export default function ProfilePage() {
                   {project.title}
                 </h3>
                 <Link
-                  href={project.url}
+                  href={project.url as any}
                   className="inline-block rounded-lg bg-upepo-500 px-6 py-2 font-semibold text-white transition-all hover:bg-upepo-600"
                 >
                   View Project
