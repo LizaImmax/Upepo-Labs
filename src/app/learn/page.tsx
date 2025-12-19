@@ -142,11 +142,77 @@ export default function LearnPage() {
         </div>
       </section>
 
+      {/* Premium Labs CTA */}
+      <section className="container-custom mb-8">
+        <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-upepo-600 to-upepo-700 p-8 text-white shadow-xl md:p-12">
+          <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
+            <div className="flex-1">
+              <div className="mb-2 inline-block rounded-full bg-white/20 px-3 py-1 text-sm font-semibold">
+                ⭐ Premium Content
+              </div>
+              <h2 className="mb-3 text-3xl font-bold">
+                Master Advanced Cloud & DevOps
+              </h2>
+              <p className="mb-4 text-lg text-upepo-100">
+                Production-grade labs with enterprise scenarios, advanced security, and multi-cloud architectures. 
+                Take your skills beyond tutorials.
+              </p>
+              <ul className="mb-6 space-y-2">
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>6+ advanced labs with new content monthly</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Expert-designed content from industry leaders</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Verified certificates for LinkedIn</span>
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/learn/premium"
+                  className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-upepo-600 transition-all hover:bg-upepo-50"
+                >
+                  Explore Premium Labs
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <Link
+                  href="/learn/premium#pricing"
+                  className="inline-flex items-center gap-2 rounded-lg border-2 border-white bg-transparent px-6 py-3 font-semibold text-white transition-all hover:bg-white/10"
+                >
+                  View Pricing
+                </Link>
+              </div>
+            </div>
+            <div className="text-8xl">🚀</div>
+          </div>
+        </div>
+      </section>
+
       {/* Hands-On Labs */}
       <section className="container-custom py-16">
-        <h2 className="mb-8 text-3xl font-bold text-gray-900 dark:text-white">
-          Featured Labs
-        </h2>
+        <div className="mb-8 flex items-center justify-between">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Free Labs
+          </h2>
+          <Link
+            href="/learn/premium"
+            className="text-sm font-semibold text-upepo-600 hover:text-upepo-700 dark:text-upepo-400"
+          >
+            View Premium Labs →
+          </Link>
+        </div>
         <div className="grid gap-6 md:grid-cols-2">
           {HANDS_ON_LABS.map((lab) => (
             <div
