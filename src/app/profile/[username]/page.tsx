@@ -652,7 +652,7 @@ export default function ProfilePage() {
                     {pub.doi && <span>DOI: {pub.doi}</span>}
                   </div>
                   <Link
-                    href={pub.url}
+                    href={pub.url as any}
                     className="inline-block rounded-lg bg-upepo-500 px-6 py-2 font-semibold text-white transition-all hover:bg-upepo-600"
                   >
                     Read Paper
