@@ -607,7 +607,7 @@ export default function ProfilePage() {
                       className="rounded-lg border border-gray-200 p-3 dark:border-gray-700"
                     >
                       <Link
-                        href={project.url}
+                        href={project.url as any}
                         className="mb-2 block font-semibold text-gray-900 hover:text-upepo-600 dark:text-white dark:hover:text-upepo-400"
                       >
                         {project.title}
