@@ -510,7 +510,7 @@ export default function ProfilePage() {
                           </span>
                         </div>
                         <Link
-                          href={exp.url}
+                          href={exp.url as any}
                           className="block font-semibold text-gray-900 hover:text-upepo-600 dark:text-white dark:hover:text-upepo-400"
                         >
                           {exp.title}
