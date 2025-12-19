@@ -465,7 +465,7 @@ export default function ProfilePage() {
                           </span>
                         </div>
                         <Link
-                          href={pub.url}
+                          href={pub.url as any}
                           className="mb-2 block font-semibold text-gray-900 hover:text-upepo-600 dark:text-white dark:hover:text-upepo-400"
                         >
                           {pub.title}
