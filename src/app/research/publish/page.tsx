@@ -447,7 +447,7 @@ Start writing here...
                         </a>
                       )}
                       <Link
-                        href={`/research/${paper.slug}`}
+                        href={`/research/${paper.slug}` as any}
                         className="rounded-lg bg-upepo-500 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-upepo-600"
                       >
                         Read Paper

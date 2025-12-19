@@ -556,7 +556,7 @@ export default function ExperimentsPage() {
 
                       <div className="mt-4 border-t border-gray-200 pt-4 dark:border-gray-700">
                         <Link
-                          href={`/experiments/${exp.slug}`}
+                          href={`/experiments/${exp.slug}` as any}
                           className="block w-full rounded-lg bg-upepo-500 px-4 py-2 text-center font-semibold text-white transition-all hover:bg-upepo-600"
                         >
                           View Details

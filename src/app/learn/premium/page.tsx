@@ -349,7 +349,7 @@ export default function PremiumLabsPage() {
                     {lab.modules} Modules
                   </span>
                   <Link
-                    href={`/learn/premium/${lab.id}`}
+                    href={`/learn/premium/${lab.id}` as any}
                     className="inline-flex items-center gap-2 rounded-lg bg-upepo-600 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-upepo-700"
                   >
                     View Lab

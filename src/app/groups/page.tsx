@@ -662,7 +662,7 @@ export default function GroupsPage() {
                     </div>
 
                     <Link
-                      href={`/groups/${group.slug}`}
+                      href={`/groups/${group.slug}` as any}
                       className="block w-full rounded-lg bg-upepo-500 px-4 py-2 text-center font-semibold text-white transition-all hover:bg-upepo-600"
                     >
                       View Group

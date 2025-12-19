@@ -528,7 +528,7 @@ export default function ResourcesPage() {
                 </div>
 
                 <Link
-                  href={`/resources/learning-paths/${path.id}`}
+                  href={`/resources/learning-paths/${path.id}` as any}
                   className="block w-full rounded-lg bg-upepo-500 px-4 py-2 text-center font-semibold text-white transition-all hover:bg-upepo-600"
                 >
                   Start Learning

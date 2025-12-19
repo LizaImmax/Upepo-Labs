@@ -497,7 +497,7 @@ kind: Pod
                     </div>
 
                     <Link
-                      href={`/wiki/${page.slug}`}
+                      href={`/wiki/${page.slug}` as any}
                       className="mb-3 block text-2xl font-bold text-gray-900 hover:text-upepo-600 dark:text-white dark:hover:text-upepo-400"
                     >
                       {page.title}
@@ -552,7 +552,7 @@ kind: Pod
                   {popularPages.map(page => (
                     <Link
                       key={page.id}
-                      href={`/wiki/${page.slug}`}
+                      href={`/wiki/${page.slug}` as any}
                       className="block rounded-lg border border-gray-200 p-3 transition-all hover:border-upepo-500 dark:border-gray-700"
                     >
                       <div className="mb-1 font-semibold text-gray-900 dark:text-white">
